@@ -10,13 +10,20 @@
     }
   ],
   "mockpreview": {
-    "mockUri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC",
-    "metadataFilePath": "",
+    "mockUri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/",
+    "metadataFilePath": "webapp/localService/metadata.xml",
     "loadJSONFiles": false,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
   },
   "hybrid": {
     "backendDestination": "ES4"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
   }
 }

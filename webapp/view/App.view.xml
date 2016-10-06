@@ -1,5 +1,6 @@
 <mvc:View displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="opensap.myapp.controller.App"
 	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:custom="opensap.myapp.lib.custom"
 	>
 	<App>
 		<pages>
@@ -49,17 +50,15 @@
 								text="{i18n>dataBindingFilter}" key="db"
 							>
 								<content>
-									<List
+									<custom:CollapseableList 
 									    id="productsList"
 										headerText="{i18n>productListTitle}"
-										updateFinished="_enhanceListGrouper"
 										items="{
 										  path: '/ProductSet',
 										  sorter: {
 										    path: 'Category',
 										    group: true
 										  },
-										  groupHeaderFactory: '.getGroupHeader',
 										  parameters : {
 										    expand: 'ToSupplier'
 										  }
@@ -68,15 +67,15 @@
 										growingThreshold="20"
 										growingScrollToLoad="false"
 									>
-										<headerToolbar>
+										<custom:headerToolbar>
 											<Toolbar>
 												<Title text="{i18n>productListTitle}"/>
 												<ToolbarSpacer/>
 												<SearchField width="50%" search="onFilterProducts"/>
 											</Toolbar>
-										</headerToolbar>
+										</custom:headerToolbar>
 										
-										<items>
+										<custom:items>
 											<ObjectListItem
 											  title="{Name}"
 											  press="onItemSelected"
@@ -94,27 +93,9 @@
 											  intro="{ProductID}"
 											  numberState="{= ${Price} > 500 ? 'Error' : 'Success'}"
 											>
-<!--												<firstStatus>
-													<ObjectStatus
-													  text="{
-													    parts: [
-													    {path: 'WeightUnit'},
-													    {path: 'WeightMeasure'}
-													    ],
-													    formatter : '.formatter.delivery'
-													  }"
-													></ObjectStatus>
-												</firstStatus>
-												<secondStatus>
-													<ObjectStatus
-														title="{i18n>statusDeliveryFrom}"
-														text="{ToSupplier/Address/City}"
-													/>
-														
-												</secondStatus>-->
 											</ObjectListItem>
-										</items>
-									</List>
+										</custom:items>
+									</custom:CollapseableList>
 									<Panel id="productDetailsPanel"
 										   headerText="{i18n>productDetailPanelHeader}"
 										   visible="{view>/showPanel}"
