@@ -1,0 +1,22 @@
+{
+  "hybrid.facadeconfig": {
+    "bFacade": true
+  },
+  "generation": [
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Sun, 28 Aug 2016 07:50:49 GMT"
+    }
+  ],
+  "mockpreview": {
+    "mockUri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "hybrid": {
+    "backendDestination": "ES4"
+  }
+}
