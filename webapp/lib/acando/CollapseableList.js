@@ -1,5 +1,5 @@
-sap.ui.define(['sap/m/List', 'sap/m/GroupHeaderListItem', './CollapseableGroupHeaderListItem'],
-	function(List, GroupHeaderListItem, CollapseableGroupHeaderListItem) {
+sap.ui.define(['sap/m/List', './CollapseableGroupHeaderListItem'],
+	function(List, CollapseableGroupHeaderListItem) {
 		"use strict";
 
 		var CollapseableList = List.extend("lib.acando.CollapseableList", {
