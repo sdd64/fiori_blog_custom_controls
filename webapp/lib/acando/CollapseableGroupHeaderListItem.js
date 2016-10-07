@@ -2,7 +2,7 @@ sap.ui.define(['sap/m/GroupHeaderListItem'],
 	function(GroupHeaderListItem) {
 		"use strict";
 
-		var CollapseableGroupHeaderListItem = GroupHeaderListItem.extend("lib.custom.CollapseableGroupHeaderListItem", {
+		var CollapseableGroupHeaderListItem = GroupHeaderListItem.extend("lib.acando.CollapseableGroupHeaderListItem", {
 			metadata: {
 				events: {},
 				properties: {
@@ -57,14 +57,7 @@ sap.ui.define(['sap/m/GroupHeaderListItem'],
 		};
 		
 		CollapseableGroupHeaderListItem.prototype.getIcon = function() {
-			var sIcon;
-			
-			if (this.getOpen()) {
-				sIcon = this.icons.DOWN;
-			} else {
-				sIcon = this.icons.RIGHT;
-			}
-			return sIcon;
+			return this.getOpen() ? "▼" : "►";
 		};
 
 		CollapseableGroupHeaderListItem.prototype.onclick = function() {

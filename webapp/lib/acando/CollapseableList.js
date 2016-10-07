@@ -1,8 +1,8 @@
-sap.ui.define(['sap/m/List', 'sap/m/GroupHeaderListItem', 'opensap/myapp/lib/custom/CollapseableGroupHeaderListItem'],
+sap.ui.define(['sap/m/List', 'sap/m/GroupHeaderListItem', './CollapseableGroupHeaderListItem'],
 	function(List, GroupHeaderListItem, CollapseableGroupHeaderListItem) {
 		"use strict";
 
-		var CollapseableList = List.extend("lib.custom.CollapseableList", {
+		var CollapseableList = List.extend("lib.acando.CollapseableList", {
 			renderer: {}
 		});
 
@@ -36,7 +36,7 @@ sap.ui.define(['sap/m/List', 'sap/m/GroupHeaderListItem', 'opensap/myapp/lib/cus
 			};
 
 			CollapseableList.prototype._isGrouper = function(oItem) {
-				return oItem.getMetadata()._sClassName === "lib.custom.CollapseableGroupHeaderListItem";
+				return oItem.getMetadata()._sClassName === "lib.acando.CollapseableGroupHeaderListItem";
 			};
 
 			return CollapseableList;

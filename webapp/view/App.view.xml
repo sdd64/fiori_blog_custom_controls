@@ -1,6 +1,6 @@
 <mvc:View displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="opensap.myapp.controller.App"
 	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
-	xmlns:custom="opensap.myapp.lib.custom"
+	xmlns:custom="opensap.myapp.lib.acando"
 	>
 	<App>
 		<pages>
