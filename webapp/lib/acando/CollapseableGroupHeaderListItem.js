@@ -49,23 +49,16 @@ sap.ui.define(['sap/m/GroupHeaderListItem'],
 			}
 		});
 
-		CollapseableGroupHeaderListItem.prototype.icons = {
-			UP: "▲",
-			DOWN: "▼",
-			RIGHT: "►",
-			LEFT: "◄"
-		};
-		
 		CollapseableGroupHeaderListItem.prototype.getIcon = function() {
 			return this.getOpen() ? "▼" : "►";
 		};
 
 		CollapseableGroupHeaderListItem.prototype.onclick = function() {
 			this._toggleGrouperState();
-			this._tooggleGrouperItems();
+			this._toggleGrouperItems();
 		};
 
-		CollapseableGroupHeaderListItem.prototype._tooggleGrouperItems = function() {
+		CollapseableGroupHeaderListItem.prototype._toggleGrouperItems = function() {
 			var aItems = this.getGroupedItems();
 			var oCore = sap.ui.getCore();
 
