@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "openSAP",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/webapp",
+        "appUrl": "#openSAP-Display",
+        "navigationComponentName": "opensap.myapp",
+        "intentSemanticObject": "openSAP",
+        "intentAction": "Display",
+        "html5ApplicationName": "zcustomlist",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "00000000-0000-1111-0000-00000000"
+        ],
+        "contentPackages": [
+            "00000000-0000-2222-0000-00000000"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "DynamicTile",
+        "title": "Custom List",
+        "subtitle": "Demo App for custom list control",
+        "searchKeywords": "Custom List,Demo App for custom list control",
+        "displayIconUrl": "sap-icon://product",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "/sap/fiori/zcustomlist/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet/$count",
+        "refreshInterval": 10,
+        "displayNumberUnit": "Products"
+    }
+}

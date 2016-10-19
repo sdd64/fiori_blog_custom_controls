@@ -59,8 +59,8 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/Address.json"
 			},
-			"" : {
-				"dataSource" : "GWSAMPLE_BASIC"
+			"": {
+				"dataSource": "GWSAMPLE_BASIC"
 			}
 		},
 		"autoPrefixId": true,
@@ -82,5 +82,9 @@
 			"compact": true,
 			"cozy": true
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }

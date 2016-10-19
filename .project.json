@@ -25,5 +25,10 @@
     "defaultLanguage": "",
     "defaultI18NPropertyFile": "",
     "resourceModelName": ""
+  },
+  "hcpdeploy": {
+    "account": "s0014000877trial",
+    "name": "zcustomlist",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
