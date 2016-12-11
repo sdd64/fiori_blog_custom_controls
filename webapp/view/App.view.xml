@@ -7,7 +7,7 @@
 				<content>
 					<IconTabBar id="idTopLevelIconTabBar"
 								class="sapUiResponsiveContentPadding"
-								selectedKey="db">
+								selectedKey="db2">
 						<items>
 							<IconTabFilter id="start" text="{i18n>gettingStartedFilter}">
 								<Button text="{i18n>showHelloButtonText}" press="onShowHello"></Button>
